@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="style/sidebar.css" rel="stylesheet" type="text/css">
+        <link href="style/prodotticategoria.css" rel="stylesheet" type="text/css">
+        
+        <meta charset="utf-8">
+		<title> Tim </title>
+		<link href="style/generalstyle.css" rel="stylesheet" type="text/css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+       
+        <script language="javascript" type="text/javascript" src="js/ajax_header.js"></script>
+        
+        <script language="javascript" type="text/javascript" src="js/heightfix.js"></script>
+        
+	</head>
+<body>
+    <div class="centerGrid">
+        <header id="headernav"></header>
+            
+        <aside id="sidebar"></aside>
+            
+        <section id="mainsection" >
+            <div id="wrapper_title">
+               <div id="nomecat">
+                <!--qui va l'icona-->
+                    <div></div>
+                    <p>nomecat</p>
+                </div>
+            </div>
+            <div id="products_section">Nessuna categoria selezionata</div>
+        </section>            
+        <script type="text/javascript" href="js/ajax_category.js">
+        
+         $(window).on('load', function() {
+                   var QueryString = function () {
+                      // This function is anonymous, is executed immediately and 
+                      // the return value is assigned to QueryString!
+                      var query_string = {};
+                      var query = window.location.search.substring(1);
+                      var vars = query.split("&");
+                      for (var i=0;i<vars.length;i++) {
+                        var pair = vars[i].split("=");
+                            // If first entry with this name
+                        if (typeof query_string[pair[0]] === "undefined") {
+                          query_string[pair[0]] = decodeURIComponent(pair[1]);
+                            // If second entry with this name
+                        } else if (typeof query_string[pair[0]] === "string") {
+                          var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
+                          query_string[pair[0]] = arr;
+                            // If third or later entry with this name
+                        } else {
+                          query_string[pair[0]].push(decodeURIComponent(pair[1]));
+                        }
+                      } 
+                      return query_string;
+                    }();
+                
+                    var rel =  "'"+ QueryString.cat + "'";
+                    
+                   $(function(){
+                            $('#wrapper_title #nomecat  p').html(QueryString.cat);
+                           
+                            /*var width = jQuery('#wrapper_title #nomecat  p').outerWidth(true);
+                            $('#wrapper_title #nomecat').css("width",width);*/
+                       
+                            $.ajax({
+                                type: "POST",
+                                url: './php/ajax_category.php',
+                                data: { "categoria" : rel,},
+
+                                success: function(data){
+                                    if (data == undefined || !data || data == null){
+                                        $('#products_section').html("Error there's no product in database for this category");
+                                    }else{
+                                        $('#products_section').html(data);
+                                    
+                                    }
+                                }
+                            });
+                    }); 
+               
+                });
+       
+     
+        </script>
+  <script language="javascript" type="text/javascript" src="js/heightfix.js"></script>
+        <footer id="footer"></footer>
+	</div>
+</body>
+</html>
