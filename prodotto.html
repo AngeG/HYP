@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="style/generalstyle.css" rel="stylesheet" type="text/css">
+    <link href="style/sidebar.css" rel="stylesheet" type="text/css">
+    <link href="style/prodotto.css" rel="stylesheet" type="text/css">
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+    
+    <title> Tim </title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    
+    <script language="javascript" type="text/javascript" src="js/ajax_header.js"></script>
+        
+    <script language="javascript" type="text/javascript" src="js/heightfix.js"></script>
+    
+    <script type="text/javascript" href="js/ajax_product.js"></script>
+</head>
+    
+<body>
+    <div class="centerGrid">
+            <header id="headernav"></header>
+            
+            <aside id="sidebar">
+                <div class="sidbtn">
+                    <a href="prodotticategoria.html">&#8592 CATEGORIA</a>
+                </div>
+            </aside>
+            
+            <nav>  
+                <div class="centerContent">
+                    <a style="color:black;border-bottom:3px solid black" class= "btn" href="#" style="text-decoration:none">Descrizione</a>
+                   
+                    <a href="" class= "btn">Specifiche Tecniche</a>
+                </div>
+            </nav> 
+        
+            <section id="mainsection" >
+                <div id="centerCont"><h3 id="titolonomedisp"></h3></div>
+                
+                
+                
+            </section>
+            
+            <footer id="footer"></footer>
+    </div>
+    
+    
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+                    var QueryString = function () {
+                      // This function is anonymous, is executed immediately and 
+                      // the return value is assigned to QueryString!
+                      var query_string = {};
+                      var query = window.location.search.substring(1);
+                      var vars = query.split("&");
+                      for (var i=0;i<vars.length;i++) {
+                        var pair = vars[i].split("=");
+                            // If first entry with this name
+                        if (typeof query_string[pair[0]] === "undefined") {
+                          query_string[pair[0]] = decodeURIComponent(pair[1]);
+                            // If second entry with this name
+                        } else if (typeof query_string[pair[0]] === "string") {
+                          var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
+                          query_string[pair[0]] = arr;
+                            // If third or later entry with this name
+                        } else {
+                          query_string[pair[0]].push(decodeURIComponent(pair[1]));
+                        }
+                      } 
+                      return query_string;
+                    }();
+                    var product = QueryString.prod; 
+        
+                    $('head title').html("Tim - Prodotti, " + product);
+                    $("#sidebar a").attr("href", "prodotticategoria.html?cat=" + QueryString.cat.substring(1,QueryString.cat.length-1));
+                    $("#sidebar a").html(QueryString.cat.substring(1,QueryString.cat.length-1));
+                    $('#mainsection #titolonomedisp').html(product);
+                    
+        
+                   $(function(){
+                            var product = QueryString.prod; 
+                            var name =  "'" + product + "'";
+                            $.ajax({
+                                
+                                type: "POST",
+                                url: 'php/ajax_product.php',
+                                data: { 'prod' : name,},
+                               
+
+                                success: function(data){
+                                    
+                                    if (data == undefined || data == null){
+                                        $('#mainsection').html("Non ci sono i dettagli su questo prodotto nel db");
+                                    }else{
+                        
+                                        $('#mainsection').append(data);
+                                        $('#mainsection').ready( function(){
+                                            var height  = jQuery('#mainsection').outerHeight(true) +10;
+                                           
+                                            height += 30 + 50;
+
+                                            $('.centerGrid').css("height",height + "px");
+                                            $('#sidebar').css("height", height-50 + "px");
+                                            $('body').css("height","+="+ 20 + "px");
+                                            
+                                        });
+
+                                    }
+                                }
+                                
+                            });
+                    }); 
+        });
+    </script>
+    
+    <script type="text/javascript">
+        
+            
+    
+    </script>
+</body>
+    
+</html>

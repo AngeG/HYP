@@ -1,0 +1,172 @@
+/*
+* Titolo della categoria con icona (centrato)
+*/
+#mainsection{
+    min-height: 250px;
+}
+
+#mainsection #wrapper_title{
+    display: inline-block;
+    width: 940px;
+}
+
+#mainsection #wrapper_title #nomecat{
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+
+}
+
+#mainsection #wrapper_title #nomecat div{
+    display: inline-block;
+    width: 30px;
+    float: left;
+
+}
+
+#mainsection #wrapper_title #nomecat p{
+    float: left;
+    font-size: 14pt;
+    display: inline-block;
+}
+/*
+* Sidebar 
+*/
+.sidbtn{
+    display: block;
+    margin: 0 4px;
+    margin-top: 20px;
+    background:#4dd2ff;
+    border-radius: 4px;
+}
+
+.sidbtn a{
+    width: 90px;
+    padding: 10px 8px;
+    font-size: 10pt;
+    margin:0 auto;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.sidbtn:hover a{
+    color: black;
+}
+
+
+/*
+* Griglia di ispositivi (lista)
+*/
+#mainsection #products_section{
+ margin: 20px 0px;
+}
+
+
+/*
+* TILE CON I DISPOSITIVI
+*/
+.device_tile{
+    display: block;
+    max-width: 305px;
+    max-height: 390px;
+    height: 390px;
+    float: left;
+    
+ background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to bottom right, #80ffff, #4dd2ff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to bottom right, #80ffff, #4dd2ff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to bottom right, #80ffff, #4dd2ff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #80ffff, #4dd2ff); /* Standard syntax */
+    margin: 4px;
+    
+    text-decoration: none;
+    
+    color: #f2f2f2;
+    font-size: 10pt;
+   transition: .2s linear;
+    
+}
+
+
+.device_tile:hover{
+    transform: scale(1.1);
+    transition: .2s linear;
+    box-shadow: 0 1px 5px #00cccc, 0 0 30px  #00ace6;
+    cursor: pointer;
+}
+
+.tile_el0>img{
+   position: relative;
+    z-index: 0;
+    display: block;
+    max-height: 280px; 
+    max-width: 240px; 
+    padding-top: 15px;
+    padding-bottom: 8px;
+    margin: 0 auto;  
+    
+}
+
+
+.tile_el0{
+    display: block;
+    height: 300px;
+}
+
+.tile_el1{
+ display: block;
+    color: white;
+    font-stretch: extra-expanded;
+    font-weight: lighter;
+    font-size: 12pt;
+    text-align: center;
+ 
+    padding-bottom: 5px;
+ 
+}
+
+.tile_el1>p{
+    margin: 0px ;
+}
+
+.tile_el2{
+ display: block;
+    height: 63px;
+    float: left;
+
+    width: 65%;
+}
+
+.tile_el2>p{
+    padding: 5px 12px;
+    margin:0;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    overflow-y: hidden;
+    color:black;
+    text-align: justify;
+    font-weight:300;
+    font-size: 8pt;
+}
+
+.tile_el3{
+ 
+    display:block;
+    max-width: 90px;
+    
+    margin-right: 15px;
+    margin-top: 12px;
+    float: right;
+}
+
+.tile_el3>p{
+    color: black;
+    margin: 0;
+    
+    text-align: right;
+    font-weight: lighter;
+    font-stretch: extra-expanded;
+    font-size: 18pt;
+}
