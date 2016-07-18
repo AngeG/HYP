@@ -8,32 +8,46 @@
         <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
          
         <meta charset="utf-8">
-		<title> Assistenza </title>
+		<title>Tim - Scrivici </title>
         
 		<link href="style/generalstyle.css" rel="stylesheet" type="text/css">
 		<link href="style/sidebar.css" rel="stylesheet" type="text/css">
         <link href="style/scrivici.css" rel="stylesheet" type="text/css">
+        
+        <script type="text/javascript">
+        function allerta(){
+            alert("Non ancora implementato (opzionale)");
+        }
+        
+    </script>
        
 	</head>
         
     <body>
 		  <div class="centerGrid">
                 
-                <header id="headernav"></header>
+            <header id="headernav"></header>
 
             <aside id = "sidebar">
 				<ul class="btn_array">
-					<li class="asbtn">
-                        <a href="Innovazione.html"> 
+					
+                    <a href="innovazione.html">
+                        <li class="asbtn">
+                         
+                            
                             <i class="fa fa-arrow-circle-left"></i>     
                             <span> Indietro </span>
-                        </a>
-                    </li>
-					<li class="asbtn">
-                        <i class="fa fa-pencil"></i><a href="Scrivici.html"> 
+                            
+                        </li>
+                    </a>
+                    
+                    <li class="asbtn">
+                        <i class="fa fa-pencil"></i><a href="scrivici.html"> 
                         <span> Scrivici! </span></a>
                     </li>
 				</ul>
+                
+              </aside>
         
             <section>
                  
@@ -63,7 +77,7 @@
                                 </li>
 
                             </ul>
-                       <button class="send"><i class="fa fa-check-square-o"></i>  Invia</button> 
+                       <button onclick="allerta()" class="send"><i class="fa fa-check-square-o"></i>  Invia</button> 
                     
                 </div>
             </section>

@@ -1,0 +1,22 @@
+h3{
+    color:#003a90;
+}
+
+#desc{
+    padding: 2px 5px 2px 5px;
+    height: 450px;
+    background-color: white;
+    text-align: center;
+    z-index: 0;
+}
+
+#desc ul {
+    list-style-type: none;
+    font-style: italic;
+    text-align: justify;
+    margin-left: 160px;
+}
+
+#desc ul li{
+    
+}

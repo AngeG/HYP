@@ -8,6 +8,7 @@
     bottom: 0;
     background: #f9f9fc;
     min-height: 670px;
+
 }
 
 
@@ -21,6 +22,7 @@
     background: #ccf2ff;
     box-shadow: 2px black;
     padding: 5px;
+    
 }
 
 
@@ -67,4 +69,5 @@
     opacity: 1;
     right: 0;
 }
+
 

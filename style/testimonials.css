@@ -1,16 +1,13 @@
 h3{
     color: #0e4aa4;
-    position: absolute;
-    top: 50px;
-    left: 30%;
+    position: relative;
+    left: 35%;
 }
 
 .paragrafo{
-    font-family: "Myriad Pro", Myriad, sans-serif;
+    
     font-size: 14px;
-    position: absolute;
-    right:70px;
-    top:80px;
+    position: relative;
     text-align: center;
 }
 
@@ -27,37 +24,37 @@ h3{
     position: absolute;
     width: 250px;
     height: 400px;
-    background: lightgray;
+    background: #e6f9ff;
     top: 20px;
     border: 1px solid lightgray;
-    box-shadow: 0 8px 8px 0;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .img_cen{
     position: absolute;
     width: 250px;
     height: 400px;
-    background: lightgray;
+    background: #e6f9ff;
     top: 20px;
     left: 280px;
     border: 1px solid lightgray;
-    box-shadow: 0 8px 8px 0;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .img_dx{
     position: absolute;
     width: 250px;
     height: 400px;
-    background: lightgray;
+    background: #e6f9ff;
     top: 20px;
     left: 560px;
     border: 1px solid lightgray;
-    box-shadow: 0 8px 8px 0;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .txt{
-    background: lightgray;
-    height: 230px;
+    background: #e6f9ff;
+    height: 210px;
     width: 230px;
     position: relative;
     top: 6px;

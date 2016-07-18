@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8-bin" />
         <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         
-        <link href="style/sidebar.css" rel="stylesheet" type="text/css">
-        
-        <link href="style/prodotticategoria.css" rel="stylesheet" type="text/css">
-        
-        <meta charset="utf-8">
 		<title> Tim </title>
         
 		<link href="style/generalstyle.css" rel="stylesheet" type="text/css">
+        
+        <link href="style/slcategoria.css" rel="stylesheet" type="text/css">
+        
+        <link href="style/sidebar.css" rel="stylesheet" type="text/css">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
        
@@ -18,20 +18,23 @@
         
         <script language="javascript" type="text/javascript" src="js/heightfix.js"></script>
         
-        <script language="javascript" type="text/javascript" src="js/ajax_category.js"></script>
+        <script language="javascript" type="text/javascript" src="js/ajax_slcat.js"></script>
+        
+        <script language="javascript" type="text/javascript" src="js/slcat.js"></script>
+        
 	</head>
-    
-    <body>
-        <div class="centerGrid">
-            <header id="headernav"></header>
 
+	<body>
+		<div class="centerGrid">
+            <header id="headernav"></header>
+            
             <aside id="sidebar">
                 <div class="sidbtn">
-                    <a href="prodotti.html">&#8592 CATEGORIE</a>
+                    <a href="servizi%20sl.html">&#8592 CATEGORIE</a>
                 </div>
             </aside>
-
-            <section id="mainsection" style="height:870px" >
+            
+            <section id="mainsection" >
                 <div id="wrapper_title">
                    <div id="nomecat">
                     <!--qui va l'icona-->
@@ -39,11 +42,17 @@
                         <p></p>
                     </div>
                 </div>
-                <div id="products_section"></div>
-            </section>            
-
-      <script language="javascript" type="text/javascript" src="js/heightfix.js"></script>
+                
+                <div id="sl_section"></div>
+            </section>
+            
             <footer id="footer"></footer>
-        </div>
-    </body>
+		</div>
+       <script type="text/javascript">
+        function allerta(){
+            alert("Non ancora implementato! Guardare TIM MUSIC come servizio Smart Life.");
+        }
+        
+        </script>
+	</body>
 </html>

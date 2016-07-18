@@ -12,10 +12,10 @@
         $device = null;
     }else{
         $device = '<div id="prodimg"> <img src="data:image/jpeg;base64,'.base64_encode( $row1['imm'] ).'"/></div>';
-        $device .=  '<div id="acq"><p>Acquista ora questo prodotto ed entra nel mondo TIM!</p></div>
-                    <a  id="btnacq" href="#"><div>Acquista</div></a>';
+        $device .=  '<div id="acq" ><p>Acquista ora questo prodotto ed entra nel mondo TIM!</p></div>
+                    <a  id="btnacq" onclick="allerta()");" href="#"><div>Acquista</div></a>';
         $device .= '<div id="prezzo"> <h2>'.$row1['prezzo']."€</h2></div>";
-        $device .= '<div id="desctext"><p>'.$row1["descrizione"]."</p></div>";
+        $device .= '<div id="desctext"><p>'.$row1['descrizione']."</p></div>";
     }
     
     $conn->close();
