@@ -1,0 +1,8 @@
+#slideshow{  
+    position: relative;
+    
+}
+
+#slideshow > div { 
+    position: absolute; 
+}

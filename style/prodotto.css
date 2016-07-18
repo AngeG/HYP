@@ -1,0 +1,214 @@
+
+.centerGrid #mainsection{
+    float: left;
+    display: inline-block;
+    position:relative;
+    width: 940px;
+    min-height: 640px;
+    margin: 0 auto;
+    bottom: 0;
+}
+
+/*
+* Sidebar 
+*/
+#sidebar{
+    margin: 0;
+    padding: 0;
+}
+.sidbtn, #transition{
+    
+    display: block;
+    margin: 0 4px;
+    margin-top: 10px;
+    background:#4dd2ff;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 10px;
+
+}
+
+#transition a{
+    padding: 8px 8px;
+    font-size: 10pt;
+    display: block;
+    text-decoration: none;
+    color: white;
+    
+
+}
+
+#transition:hover a{
+    color: black;
+    
+}
+
+.sidbtn a{
+    padding: 8px 2px;
+    font-size: 10pt;
+
+    display: block;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.sidbtn:hover a{
+    color: black;
+}
+
+#sidebar h5{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+#sidebar ul a{
+    text-decoration: none;
+    color: darkblue;
+    
+
+}
+
+#sidebar ul a:hover{
+    text-decoration: none;
+    color:blue;
+    
+}
+
+
+#sidebar ul{
+    
+    list-style: none;
+    margin:0;
+    padding: 0;
+    
+}
+#sidebar ul li{
+    font-size: 10pt;
+    margin: 5px 8px;
+    text-align: center;
+    padding: 0;
+}
+
+/*
+* barra di navigazione della sezione principale
+*/
+.centerContent{
+    position: relative;
+    width: 280px;
+    margin: 0 auto;
+}
+
+.centerGrid nav{
+    display: inline-block;
+    width: 941px;
+    position: relative;
+    float:left;
+    text-align: center;
+    background:#e6f9ff;
+}
+
+.centerGrid nav .btn{
+    border: none;
+    text-align: center;
+    
+    display: inline-block;
+    font-size:14px;
+    cursor: pointer;
+    padding: 2px;
+    position: relative;
+    
+    width: 140px;
+    float:left;
+    color: #66d9ff;
+    color:#00b8e6;
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+
+.centerGrid nav .btn:hover {
+    border-bottom: 3px solid #66d9ff;
+    
+}
+
+.centerGrid nav #descbtn:hover{
+     border-bottom: 3px solid #66d9ff;
+}
+
+/*
+*    SEZIONE PRINCIPALE CON LA DESCRIZIONE
+*/
+#centerCont{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#mainsection #prodimg {
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    
+    float:left;
+    display: inline-block;
+}
+
+#mainsection #acq{
+    display:block;
+}
+
+#mainsection #btnacq{
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+#mainsection #btnacq{
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 3px;
+    background: #ff8080;
+}
+
+#mainsection  #btnacq:hover{
+    color: black;
+}
+
+#mainsection #prodimg img{
+    max-width: 350px;
+}
+
+#mainsection #prezzo{
+    margin-top: 20px;
+}
+
+#mainsection #desctext{
+    text-align: justify;
+    margin:20px;
+}
+
+/*
+* tabella specifiche
+*/
+
+#mainsection #cont table{
+    border-top: 2px solid #3399ff;
+    border-bottom: 2px solid #3399ff;
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+
+#mainsection #cont table td{
+    padding-right: 40px;
+}
+
+#mainsection #cont .spec{
+    font-weight: bold;
+    color: #003d99;
+}
