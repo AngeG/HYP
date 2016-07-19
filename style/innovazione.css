@@ -1,0 +1,46 @@
+
+
+
+#mainsection .txt h3{
+    color: #0e4aa4;
+    text-align: center;
+
+}
+
+.paragrafo{
+    font-size: 14px;
+    text-align: center;
+}
+
+#mainsection .txt{
+    position: relative;
+    margin: 0 auto;
+}
+
+#mainsection .card img{
+    max-width: 216px;
+    max-height: 200px;
+    display: block;
+    float: left;
+}
+
+#mainsection .card{
+    display: inline-block;
+    width: 95%;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    float: left;
+    background:#e6f9ff;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#mainsection .card p{
+    width: 640px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+    float: right;
+}
+

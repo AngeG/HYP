@@ -1,0 +1,134 @@
+.grid{
+    position: absolute;
+    float:left;
+    right:10px;
+    background-color: white;
+    top: 10px;
+    width: 1080px;
+    height: 600px;
+}
+
+h1{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    color: #003a90;
+    font-family: "Myriad Pro", Myriad, sans-serif;
+    font-size: 25px; 
+    font-style: italic;
+}
+
+.text{
+    position: absolute;
+    width: 1080px;
+    height: 90px;
+    top: 60px;
+    text-align: center;
+    background-color: white;
+    font-family: "Myriad Pro", Myriad, sans-serif;
+    font-size: 15px;
+}
+
+.cont{
+    position: relative;
+    align-content: center;
+    top:22%;
+    width:1080px;
+    height: 480px;
+    background-color: white;
+    
+}
+
+.uppercont, downcont{
+    width: 1100px;
+    height: 240px;
+    
+}
+
+.uppercont{
+    align-content: center;
+}
+
+.sx, .cen, .dx{
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    left: 10%;
+    width: 240px;
+    height: 210px;
+    margin: 25px;
+    padding: 10px;
+    background-color: aliceblue;
+    text-align: center;
+    border: 1px solid #003a90;
+}
+
+.sx_sl{
+    display: inline-block;
+    position: relative;
+    left: 39.38%;
+    width: 240px;
+    height: 210px;
+    margin: 25px;
+    padding: 10px;
+    background-color: aliceblue;
+    text-align: center;
+    border: 1px solid #003a90;
+}
+
+.sx:hover, .cen:hover, .dx:hover, .sx_sl:hover{
+    box-shadow: 3px 3px 3px 3px  gray;
+    background-color: #003a90;
+    color:white;
+}
+
+.sx a, .cen a, .dx a, .sx_sl a{
+    color: #003a90;
+    text-decoration: none;
+}
+
+.sx:hover a, .cen:hover a, .dx:hover a, .sx_sl:hover a{
+    color: white;
+    text-decoration: none;
+}
+
+.sx a:hover, .cen a:hover, .dx a:hover, .sx_sl a:hover{
+    color: #ff1a1a;
+    text-decoration: none;
+}
+
+.downcont{
+    position: relative;
+    top: 10px;
+}
+
+
+.downcont>.sx{
+    position: relative;
+    left:24%;
+}
+
+.downcont>.dx{
+    position: relative;
+    left:24%;
+}
+
+.bio{
+    position:absolute;
+    top:45%;
+    height: 100px;
+    width: 240px;
+    text-align: center;
+    font-style: italic;
+    font-family: "Myriad Pro", Myriad, sans-serif;
+    color: #4d4d4d;
+    font-size: 14px;
+}
+
+.bio p{
+    z-index: 1;
+}
+
+.sx:hover p, .cen:hover p, .dx:hover p, .sx_sl:hover p{
+    color:white;
+}

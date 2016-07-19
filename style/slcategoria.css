@@ -1,0 +1,151 @@
+/*
+* Sidebar 
+*/
+.sidbtn{
+    display: block;
+    margin: 0 4px;
+    margin-top: 20px;
+    background:#4dd2ff;
+    border-radius: 4px;
+}
+
+.sidbtn a{
+    width: 90px;
+    padding: 10px 8px;
+    font-size: 10pt;
+    margin:0 auto;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.sidbtn:hover a{
+    color: black;
+}
+
+/*
+* Titolo della categoria con icona (centrato)
+*/
+#mainsection{
+    min-height: 250px;
+}
+
+#mainsection #wrapper_title{
+    display: inline-block;
+    width: 940px;
+}
+
+#mainsection #wrapper_title #nomecat{
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+
+}
+
+#mainsection #wrapper_title #nomecat div{
+    display: inline-block;
+    width: 30px;
+    float: left;
+
+}
+
+#mainsection #wrapper_title #nomecat p{
+    float: left;
+    font-size: 14pt;
+    display: inline-block;
+}
+
+/*
+* TILE CON I DISPOSITIVI
+*/
+
+.device_tile{
+    display: block;
+    width: 930px;
+    
+ 
+    margin-left: 5px;
+    float: left;
+    
+    background: #e6f9ff;
+    margin: 4px;
+    
+    text-decoration: none;
+    
+    color: #f2f2f2;
+    font-size: 10pt;
+   transition: .2s linear;
+    
+}
+
+
+.device_tile:hover{
+    
+    box-shadow: 0 1px 3px grey, 0 0 10px  grey;
+    cursor: pointer;
+}
+
+.tile_el0>img{
+    display: block; 
+    max-height: 200px; 
+    padding-top: 15px;
+    padding-bottom: 8px;
+    margin: 0 auto;  
+    
+}
+
+
+.tile_el0{
+    
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+
+
+.tile_el1>p{
+    color: black;
+    font-weight: bolder;
+    font-size: 14pt;
+    color:#0e4aa4;
+}
+
+
+.tile_el2{
+    display: inline-block;
+    float: left;
+    max-width: 600px;
+    
+}
+
+.tile_el2>p{
+    margin:0;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    overflow-y: hidden;
+    color:black;
+    text-align: justify;
+    font-weight:300;
+    font-size: 12pt;
+}
+
+.tile_el3{
+ 
+    display:block;
+    max-width: 530px;
+    
+    margin-right: 22px;
+    margin-top: 12px;
+    float: right;
+}
+
+.tile_el3>p{
+    color: black;
+    margin-top: 100px;
+    
+    
+    font-weight: lighter;
+    font-stretch: extra-expanded;
+    font-size: 12pt;
+}
