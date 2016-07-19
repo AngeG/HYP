@@ -48,7 +48,7 @@ h1{
     padding: 15px;
     width: 50%;
     display: inline-block;
-    margin: 0px 10px 20px 10px;
+    margin: 0px /*10*/30px /*20*/30px 10px;
 }
 
 
@@ -69,7 +69,7 @@ h1{
     float: left;
     position: relative;
     top: 15px;
-    left: 60px; 
+    left: 45px; 
     text-align: left;
 }
 
